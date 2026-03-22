@@ -18,8 +18,7 @@ API_HASH        = os.environ.get("5c8ad310b11454cbb5cbb3bc3df75c54", "")
 BOT_TOKEN       = os.environ.get("8761145131:AAHl2uUeiKPNipRY0zKwuVek-L1ejBZahd0", "")
 OMDB_KEY        = os.environ.get("http://www.omdbapi.com/?i=tt3896198&apikey=ab97208c", "")
 MOVIE_CHANNEL   = os.environ.get("-1002793410950", "")   # Channel 1 - jahan movies hain
-UPDATE_CHANNEL  = os.environ.get("-1001713509408
-", "")  # Channel 2 - jahan update jaega
+UPDATE_CHANNEL  = os.environ.get("-1001713509408", "")  # Channel 2 - jahan update jaega
 MOVIE_CH_LINK   = os.environ.get("https://t.me/rksearchinggroup", "")   # e.g. https://t.me/YourMovieChannel
 
 # ─── INIT CLIENT ─────────────────────────────────────────────────────────────
