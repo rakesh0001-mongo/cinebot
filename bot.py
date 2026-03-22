@@ -235,6 +235,10 @@ async def main():
     logger.info(f"Update Channel: {UPDATE_CHANNEL}")
     await client.run_until_disconnected()
 
-if __name__ == "__main__":
+if name == "main":
+    import asyncio
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     with client:
-        client.loop.run_until_complete(main())
+        loop.run_until_complete(main())
+
