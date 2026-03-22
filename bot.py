@@ -13,16 +13,16 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ─── CONFIG (Railway environment variables se aayega) ────────────────────────
-API_ID          = int(os.environ.get("21954054", "0"))
-API_HASH        = os.environ.get("5c8ad310b11454cbb5cbb3bc3df75c54", "")
-BOT_TOKEN       = os.environ.get("8761145131:AAHl2uUeiKPNipRY0zKwuVek-L1ejBZahd0", "")
-OMDB_KEY        = os.environ.get("http://www.omdbapi.com/?i=tt3896198&apikey=ab97208c", "")
-MOVIE_CHANNEL   = os.environ.get("-1002793410950", "")   # Channel 1 - jahan movies hain
-UPDATE_CHANNEL  = os.environ.get("-1001713509408", "")  # Channel 2 - jahan update jaega
-MOVIE_CH_LINK   = os.environ.get("https://t.me/rksearchinggroup", "")   # e.g. https://t.me/YourMovieChannel
+API_ID          = int(os.environ.get("API_ID", "0"))
+API_HASH        = os.environ.get("API_HASH", "")
+BOT_TOKEN       = os.environ.get("BOT_TOKEN", "")
+OMDB_KEY        = os.environ.get("OMDB_KEY", "")
+MOVIE_CHANNEL   = os.environ.get("MOVIE_CHANNEL", "")   # Channel 1 - jahan movies hain
+UPDATE_CHANNEL  = os.environ.get("UPDATE_CHANNEL", "")  # Channel 2 - jahan update jaega
+MOVIE_CH_LINK   = os.environ.get("MOVIE_CH_LINK", "")   # e.g. https://t.me/YourMovieChannel
 
 # ─── INIT CLIENT ─────────────────────────────────────────────────────────────
-client = TelegramClient('bot_session', 21954054, 5c8ad310b11454cbb5cbb3bc3df75c54).start(bot_token=8761145131:AAHl2uUeiKPNipRY0zKwuVek-L1ejBZahd0)
+client = TelegramClient('bot_session', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 # ─── MOVIE NAME CLEANER ───────────────────────────────────────────────────────
 def clean_movie_name(text: str) -> str:
