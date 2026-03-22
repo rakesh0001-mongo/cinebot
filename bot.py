@@ -22,7 +22,7 @@ UPDATE_CHANNEL  = os.environ.get("-1001713509408", "")  # Channel 2 - jahan upda
 MOVIE_CH_LINK   = os.environ.get("https://t.me/rksearchinggroup", "")   # e.g. https://t.me/YourMovieChannel
 
 # ─── INIT CLIENT ─────────────────────────────────────────────────────────────
-client = TelegramClient('bot_session', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+client = TelegramClient('bot_session', 21954054, 5c8ad310b11454cbb5cbb3bc3df75c54).start(bot_token=8761145131:AAHl2uUeiKPNipRY0zKwuVek-L1ejBZahd0)
 
 # ─── MOVIE NAME CLEANER ───────────────────────────────────────────────────────
 def clean_movie_name(text: str) -> str:
